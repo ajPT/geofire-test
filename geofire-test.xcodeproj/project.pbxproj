@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		714C949176BDA636D5CEDA78 /* Pods_geofire_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E808AB550D200FAA14EE4B /* Pods_geofire_test.framework */; };
 		E0DC86A41D5136C700C72E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC86A31D5136C700C72E2E /* AppDelegate.swift */; };
 		E0DC86A61D5136C700C72E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC86A51D5136C700C72E2E /* ViewController.swift */; };
 		E0DC86A91D5136C700C72E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DC86A71D5136C700C72E2E /* Main.storyboard */; };
 		E0DC86AB1D5136C700C72E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DC86AA1D5136C700C72E2E /* Assets.xcassets */; };
 		E0DC86AE1D5136C700C72E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DC86AC1D5136C700C72E2E /* LaunchScreen.storyboard */; };
+		E0DC86B61D5139EB00C72E2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0DC86B51D5139EB00C72E2E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2844F277CA2DDC2C8BE75527 /* Pods-geofire-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geofire-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-geofire-test/Pods-geofire-test.debug.xcconfig"; sourceTree = "<group>"; };
+		A07377E9F2AF8EA2381F519A /* Pods-geofire-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-geofire-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-geofire-test/Pods-geofire-test.release.xcconfig"; sourceTree = "<group>"; };
+		C2E808AB550D200FAA14EE4B /* Pods_geofire_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geofire_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DC86A01D5136C600C72E2E /* geofire-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "geofire-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DC86A31D5136C700C72E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0DC86A51D5136C700C72E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		E0DC86AA1D5136C700C72E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0DC86AD1D5136C700C72E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0DC86AF1D5136C700C72E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DC86B51D5139EB00C72E2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				714C949176BDA636D5CEDA78 /* Pods_geofire_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		399BAE7849D1D8104494C214 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2844F277CA2DDC2C8BE75527 /* Pods-geofire-test.debug.xcconfig */,
+				A07377E9F2AF8EA2381F519A /* Pods-geofire-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A2E6D704DB08861732F93186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2E808AB550D200FAA14EE4B /* Pods_geofire_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0DC86971D5136C600C72E2E = {
 			isa = PBXGroup;
 			children = (
 				E0DC86A21D5136C700C72E2E /* geofire-test */,
 				E0DC86A11D5136C600C72E2E /* Products */,
+				399BAE7849D1D8104494C214 /* Pods */,
+				A2E6D704DB08861732F93186 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				E0DC86AA1D5136C700C72E2E /* Assets.xcassets */,
 				E0DC86AC1D5136C700C72E2E /* LaunchScreen.storyboard */,
 				E0DC86AF1D5136C700C72E2E /* Info.plist */,
+				E0DC86B51D5139EB00C72E2E /* GoogleService-Info.plist */,
 			);
 			path = "geofire-test";
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0DC86B21D5136C700C72E2E /* Build configuration list for PBXNativeTarget "geofire-test" */;
 			buildPhases = (
+				9B36F75D3F615F953CD10325 /* [CP] Check Pods Manifest.lock */,
 				E0DC869C1D5136C600C72E2E /* Sources */,
 				E0DC869D1D5136C600C72E2E /* Frameworks */,
 				E0DC869E1D5136C600C72E2E /* Resources */,
+				5039E2F9D2A268905C92DE92 /* [CP] Embed Pods Frameworks */,
+				E550B13A0D30449368FE56DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0DC86AE1D5136C700C72E2E /* LaunchScreen.storyboard in Resources */,
+				E0DC86B61D5139EB00C72E2E /* GoogleService-Info.plist in Resources */,
 				E0DC86AB1D5136C700C72E2E /* Assets.xcassets in Resources */,
 				E0DC86A91D5136C700C72E2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5039E2F9D2A268905C92DE92 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geofire-test/Pods-geofire-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B36F75D3F615F953CD10325 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E550B13A0D30449368FE56DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-geofire-test/Pods-geofire-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0DC869C1D5136C600C72E2E /* Sources */ = {
@@ -247,6 +326,7 @@
 		};
 		E0DC86B31D5136C700C72E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2844F277CA2DDC2C8BE75527 /* Pods-geofire-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "geofire-test/Info.plist";
@@ -258,6 +338,7 @@
 		};
 		E0DC86B41D5136C700C72E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A07377E9F2AF8EA2381F519A /* Pods-geofire-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "geofire-test/Info.plist";
@@ -286,6 +367,7 @@
 				E0DC86B41D5136C700C72E2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
