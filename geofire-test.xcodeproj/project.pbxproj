@@ -30,6 +30,7 @@
 		E0DC86AF1D5136C700C72E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E0DC86B51D5139EB00C72E2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0DC86B81D513B0F00C72E2E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		E0DC86C61D51433800C72E2E /* geofire-test-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "geofire-test-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +83,10 @@
 		E0DC86A21D5136C700C72E2E /* geofire-test */ = {
 			isa = PBXGroup;
 			children = (
+				E0DC86B71D513AF700C72E2E /* DataService */,
 				E0DC86BC1D513B6E00C72E2E /* Model */,
 				E0DC86BB1D513B6400C72E2E /* View */,
 				E0DC86BA1D513B5C00C72E2E /* Controller */,
-				E0DC86B71D513AF700C72E2E /* DataService */,
 				E0DC86AA1D5136C700C72E2E /* Assets.xcassets */,
 				E0DC86BD1D513B7300C72E2E /* Support Files */,
 			);
@@ -130,6 +131,7 @@
 			children = (
 				E0DC86AF1D5136C700C72E2E /* Info.plist */,
 				E0DC86B51D5139EB00C72E2E /* GoogleService-Info.plist */,
+				E0DC86C61D51433800C72E2E /* geofire-test-Bridging-Header.h */,
 			);
 			name = "Support Files";
 			sourceTree = "<group>";
@@ -373,10 +375,13 @@
 			baseConfigurationReference = 2844F277CA2DDC2C8BE75527 /* Pods-geofire-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "geofire-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ajandrade.geofire-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "geofire-test/geofire-test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -385,10 +390,12 @@
 			baseConfigurationReference = A07377E9F2AF8EA2381F519A /* Pods-geofire-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "geofire-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ajandrade.geofire-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "geofire-test/geofire-test-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -7,6 +7,6 @@ target 'geofire-test' do
   	pod 'Firebase'
   	pod 'Firebase/Storage'
   	pod 'Firebase/Database'
-	# pod 'GeoFire', '~> 1.1'
+	pod 'GeoFire', :git => 'https://github.com/firebase/geofire-objc.git'
 
 end
