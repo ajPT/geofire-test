@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		714C949176BDA636D5CEDA78 /* Pods_geofire_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E808AB550D200FAA14EE4B /* Pods_geofire_test.framework */; };
 		E0DC86A41D5136C700C72E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC86A31D5136C700C72E2E /* AppDelegate.swift */; };
-		E0DC86A61D5136C700C72E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC86A51D5136C700C72E2E /* ViewController.swift */; };
+		E0DC86A61D5136C700C72E2E /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC86A51D5136C700C72E2E /* MapVC.swift */; };
 		E0DC86A91D5136C700C72E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DC86A71D5136C700C72E2E /* Main.storyboard */; };
 		E0DC86AB1D5136C700C72E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0DC86AA1D5136C700C72E2E /* Assets.xcassets */; };
 		E0DC86AE1D5136C700C72E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0DC86AC1D5136C700C72E2E /* LaunchScreen.storyboard */; };
 		E0DC86B61D5139EB00C72E2E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0DC86B51D5139EB00C72E2E /* GoogleService-Info.plist */; };
 		E0DC86B91D513B0F00C72E2E /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC86B81D513B0F00C72E2E /* DataService.swift */; };
+		E0DC86C81D525B8900C72E2E /* MapVC+LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DC86C71D525B8800C72E2E /* MapVC+LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,7 @@
 		C2E808AB550D200FAA14EE4B /* Pods_geofire_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_geofire_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DC86A01D5136C600C72E2E /* geofire-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "geofire-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0DC86A31D5136C700C72E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0DC86A51D5136C700C72E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0DC86A51D5136C700C72E2E /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		E0DC86A81D5136C700C72E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0DC86AA1D5136C700C72E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0DC86AD1D5136C700C72E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 		E0DC86B51D5139EB00C72E2E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E0DC86B81D513B0F00C72E2E /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E0DC86C61D51433800C72E2E /* geofire-test-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "geofire-test-Bridging-Header.h"; sourceTree = "<group>"; };
+		E0DC86C71D525B8800C72E2E /* MapVC+LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MapVC+LocationManager.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				E0DC86A31D5136C700C72E2E /* AppDelegate.swift */,
-				E0DC86A51D5136C700C72E2E /* ViewController.swift */,
+				E0DC86A51D5136C700C72E2E /* MapVC.swift */,
+				E0DC86C71D525B8800C72E2E /* MapVC+LocationManager.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -259,8 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0DC86C81D525B8900C72E2E /* MapVC+LocationManager.swift in Sources */,
 				E0DC86B91D513B0F00C72E2E /* DataService.swift in Sources */,
-				E0DC86A61D5136C700C72E2E /* ViewController.swift in Sources */,
+				E0DC86A61D5136C700C72E2E /* MapVC.swift in Sources */,
 				E0DC86A41D5136C700C72E2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
