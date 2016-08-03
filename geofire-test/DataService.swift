@@ -9,6 +9,7 @@
 import Foundation
 import Firebase
 import GeoFire
+import CoreLocation
 
 class DataService {
 
@@ -23,6 +24,34 @@ class DataService {
     
     var REF_GEOFIRE: GeoFire {
         return _REF_GEOFIRE
+    }
+    
+    var REF_PHOTOS: FIRDatabaseReference {
+        return _REF_BASE.child("photos")
+    }
+
+    
+    func createFirebasePhotoWithLocation(key: FIRDatabaseReference, photo: String, coord: CLLocationCoordinate2D) {
+        //KEY WILL BE NEEDED TO STORE WITH GEOFIRE
+        //create new entry/key
+        //let photoKey = REF_PHOTOS.childByAutoId()
+    
+        //add info to entry/key
+        let infoDict = [
+            "photo" : photo,
+            "coords" : ["lat" : coord.latitude, "long" : coord.longitude]
+        ]
+        key.setValue(infoDict)
+    }
+    
+    func saveToGeoFire(location: CLLocation, firebaseKey: String) {
+        _REF_GEOFIRE.setLocation(location, forKey: firebaseKey) { (error) in
+            if (error != nil) {
+                print("An error occured: \(error)")
+            } else {
+                print("Saved location successfully!")
+            }
+        }
     }
     
 }
